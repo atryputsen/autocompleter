@@ -1,0 +1,46 @@
+#ac, #ac2 {
+	width: 18em;
+}
+
+#results {
+    list-style-position: outside;
+    list-style: none;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #A9A9A9;
+    margin: 0;
+    padding: 0.2em;
+    position: absolute;
+    font-family: Tahoma,Arial,sans-serif; 
+    font-size: 1em; 
+    color: black; 
+}
+
+#results li {
+	padding: 0.1em 0;
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+}
+
+#results .selected {
+	background-color: #666;
+	color: #fff;
+}
+
+#results .unselected {
+	background-color: #fff;
+	color: #666;
+}
+
+#results .close {
+	background: url("clear-search-x.gif") no-repeat scroll top right transparent;
+    color:black;
+    width:1em;
+    height:1em;
+    padding:0.2em;
+    text-decoration:none;
+    display:block;
+    float:right;
+    text-indent:-9999px;
+    cursor: pointer;
+}

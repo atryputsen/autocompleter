@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="autosearch.css" type="text/css" media="screen">	
+</head>
+
+<body>
+	<div id="content">
+	<h1>AutoComplete</h1>
+    <form>
+        <input type="text" id="ac"><br/>
+        <input type="text" id="ac2">
+    </form>
+    </div>
+    <div id="last_selected"></div></div>
+<script type="text/javascript" src="jquery_min.js"></script>
+<script type="text/javascript" src="autosearch.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    new $.acr("ac",{
+    	url:'mil.json',
+    	minChars: 2,
+    	delay: 100,
+	    useCache:true,
+	    maxCharsInRow: 30,
+    	showResult: function(value, data) {return '' + value + '';},	   
+        displayValue: function(item,content) {
+            var text = 'You selected <b>' + item[content]["Display"] + '</b>';
+                text += ' <i>' + item[content]["Rate"] + '</i>';
+            $("#ac").val(item[content]["Display"]);    
+            $("#last_selected").html(text);
+        },	   			    	 	
+        });	
+});
+
+$(function() {
+    new $.acr("ac2", {
+    	url:'mil.json',
+    	queryParamName: "q",   	
+    	showResult: function(value, data) {return '<span style="color:red">' + value + '</span>';}    	 	
+        });	
+});  
+</script>    
+</body>
+
+</html>

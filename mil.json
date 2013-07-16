@@ -1,0 +1,53 @@
+{
+
+    "ResultSet": {
+        "searchTerm": "mi",
+        "totalResultsReturned": 10,
+        "requiredFields": [
+            "Display"
+        ],
+        "Result": [
+            {
+                "Display": "Milan, Lomb., Italy",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "Minneapolis, MN",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "Milwaukee, WI",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "Miami, FL",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "Milton Keynes, Milton Keynes, United Kingdom",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "Minhang, China",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "MDW - Midway Airport, IL",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "MIA - Miami International Airport, FL",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "DTW - Detroit Metro, MI",
+                "Rank":19,"Class":"city"
+            },
+            {
+                "Display": "MSP - Minneapolis-St Paul International Airport, MN",
+                "Rank":19,"Class":"city"
+            }
+        ]
+    }
+
+}
